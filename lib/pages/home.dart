@@ -15,37 +15,27 @@ class _HomePageState extends State<HomePage> {
     Product(
       id: 'p1',
       name: 'Cucumber',
-      expiryDate: DateTime.now().toString(),
+      expiryDate: "21.02.2021",
     ),
     Product(
       id: 'p1',
       name: 'Apple',
-      expiryDate: DateTime.now().toString(),
+      expiryDate: "21.02.2021",
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now().toString(),
+      expiryDate: "21.02.2021",
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now().toString(),
+      expiryDate: "21.02.2021",
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now().toString(),
-    ),
-    Product(
-      id: 'p1',
-      name: 'Banana',
-      expiryDate: DateTime.now().toString(),
-    ),
-    Product(
-      id: 'p1',
-      name: 'Banana',
-      expiryDate: DateTime.now().toString(),
+      expiryDate: "21.02.2021",
     ),
   ];
 
