@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class NewProduct extends StatefulWidget {
   final Function addProduct;
@@ -12,6 +13,7 @@ class NewProduct extends StatefulWidget {
 class _NewProductState extends State<NewProduct> {
   final nameController = TextEditingController();
   final expiryDateController = TextEditingController();
+  var _selectedDate;
 
   void submitData() {
     final enteredName = nameController.text;
@@ -30,6 +32,8 @@ class _NewProductState extends State<NewProduct> {
     Navigator.of(context).pop();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -47,7 +51,7 @@ class _NewProductState extends State<NewProduct> {
               TextField(
                 decoration: InputDecoration(labelText: 'Expiry Date'),
                 controller: expiryDateController,
-                keyboardType: TextInputType.datetime,
+                onTap: () {},
                 onSubmitted: (_) => submitData(),
               ),
               FlatButton(

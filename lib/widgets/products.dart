@@ -28,7 +28,7 @@ class ProductsList extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      DateFormat.yMMMd().format(products[index].expiryDate),
+                      'This product expires on the ${products[index].expiryDate}',
                       style: TextStyle(
                         color: Colors.grey,
                       ),

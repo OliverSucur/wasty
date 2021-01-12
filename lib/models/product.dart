@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 class Product{
   final String id;
   final String name;
-  final DateTime expiryDate;
+  final String expiryDate;
 
   Product({
     @required this.id,

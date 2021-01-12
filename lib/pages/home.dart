@@ -15,41 +15,41 @@ class _HomePageState extends State<HomePage> {
     Product(
       id: 'p1',
       name: 'Cucumber',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Apple',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
     Product(
       id: 'p1',
       name: 'Banana',
-      expiryDate: DateTime.now(),
+      expiryDate: DateTime.now().toString(),
     ),
   ];
 
-  void _addNewProduct(String pName, DateTime pDate) {
+  void _addNewProduct(String pName, String pDate) {
     final newProduct = Product(
       id: DateTime.now().toString(),
       name: pName,
@@ -109,7 +109,6 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              Container(child: SingleChildScrollView()),
             ],
           ),
           floatingActionButtonLocation:

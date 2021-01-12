@@ -9,7 +9,49 @@ class _StatsPageState extends State<StatsPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Stats Page!"),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            margin: EdgeInsets.all(20),
+            child: Text(
+              "You are 13% better than the average human",
+              style: TextStyle(fontSize: 25),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Center(
+            child: Image(
+              width: 250.0,
+              image: AssetImage('assets/earth.png'),
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.fromLTRB(20, 25, 0, 0),
+                child: Text(
+                  "Hier steht ein Text",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Container(
+                margin: EdgeInsets.fromLTRB(0, 25, 20, 0),
+                child: Text(
+                  "Hier steht ein Text",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

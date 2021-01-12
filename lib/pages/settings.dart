@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wasty/widgets/toggleButton.dart';
 
 class SettingsPage extends StatefulWidget {
   @override
@@ -17,8 +16,12 @@ class _SettingsPageState extends State<SettingsPage> {
             child: Row(
               children: <Widget>[
                 Text("Enable Notifications"),
-                IconButton(
-                  icon: Icon(Icons.check),
+                Container(
+                  margin: EdgeInsets.fromLTRB(150, 0, 0, 0),
+                    child: IconButton(
+                    icon: Icon(Icons.check),
+                    onPressed: () {},
+                  ),
                 ),
               ],
             ),
@@ -28,10 +31,17 @@ class _SettingsPageState extends State<SettingsPage> {
               children: <Widget>[
                 Text("Enable Notifications"),
                 Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Enter a search term',
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(80, 0, 0, 0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.all(8),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.black, width: 1.0),
+                        ),
+                        hintText: 'Days',
+                      ),
                     ),
                   ),
                 ),
