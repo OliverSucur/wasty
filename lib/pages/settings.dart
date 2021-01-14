@@ -29,7 +29,7 @@ class _SettingsPageState extends State<SettingsPage> {
           Card(
             child: Row(
               children: <Widget>[
-                Text("Enable Notifications"),
+                Text("Notifications time in advance"),
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.fromLTRB(80, 0, 0, 0),

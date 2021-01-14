@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:wasty/pages/index.dart';
 
-import 'package:wasty/pages/settings.dart';
-import 'package:wasty/pages/stats.dart';
-import 'package:wasty/pages/home.dart';
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+  FlutterLocalNotificationsPlugin();
 
 void main() => runApp(MyApp());
 

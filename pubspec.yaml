@@ -26,6 +26,7 @@ dependencies:
   intl: ^0.16.1
   toggle_switch: "^0.1.8"
   font_awesome_flutter: "8.11.0" 
+  flutter_local_notifications: ^3.0.3
 
 
   # The following adds the Cupertino Icons font to your application.

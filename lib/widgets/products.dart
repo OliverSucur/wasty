@@ -3,11 +3,16 @@ import 'package:intl/intl.dart';
 
 import '../models/product.dart';
 
-class ProductsList extends StatelessWidget {
+class ProductsList extends StatefulWidget {
   final List<Product> products;
+  final Function resetHomeScreen;
+  ProductsList(this.products, this.resetHomeScreen);
 
-  ProductsList(this.products);
+  @override
+  _ProductsListState createState() => _ProductsListState();
+}
 
+class _ProductsListState extends State<ProductsList> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,14 +26,14 @@ class ProductsList extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      products[index].name,
+                      widget.products[index].name,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      'This product expires on the ${products[index].expiryDate}',
+                      'This product expires on the ${widget.products[index].expiryDate}',
                       style: TextStyle(
                         color: Colors.grey,
                       ),
@@ -39,13 +44,18 @@ class ProductsList extends StatelessWidget {
                     child: IconButton(
                   icon: Icon(Icons.delete),
                   tooltip: "Delete",
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      widget.products.removeAt(index);
+                      widget.resetHomeScreen();
+                    });
+                  },
                 )),
               ],
             ),
           );
         },
-        itemCount: products.length,
+        itemCount: widget.products.length,
       ),
     );
   }

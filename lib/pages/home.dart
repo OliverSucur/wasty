@@ -62,6 +62,10 @@ class _HomePageState extends State<HomePage> {
         });
   }
 
+  void _resetHomeScreen(){
+    setState(() { });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: <Widget>[
-                      ProductsList(_products),
+                      ProductsList(_products, _resetHomeScreen)
                     ],
                   ),
                 ),

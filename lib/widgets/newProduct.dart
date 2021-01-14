@@ -13,7 +13,6 @@ class NewProduct extends StatefulWidget {
 class _NewProductState extends State<NewProduct> {
   final nameController = TextEditingController();
   final expiryDateController = TextEditingController();
-  var _selectedDate;
 
   void submitData() {
     final enteredName = nameController.text;

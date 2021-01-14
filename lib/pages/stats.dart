@@ -32,7 +32,7 @@ class _StatsPageState extends State<StatsPage> {
               Container(
                 margin: EdgeInsets.fromLTRB(20, 25, 0, 0),
                 child: Text(
-                  "Hier steht ein Text",
+                  "30 people could feed on your \ndiscarded food in one day",
                   style: TextStyle(fontSize: 20),
                 ),
               ),
@@ -44,7 +44,7 @@ class _StatsPageState extends State<StatsPage> {
               Container(
                 margin: EdgeInsets.fromLTRB(0, 25, 20, 0),
                 child: Text(
-                  "Hier steht ein Text",
+                  "The wood you throw away quates \nto 20 kilograms of CO2",
                   style: TextStyle(fontSize: 20),
                 ),
               ),
